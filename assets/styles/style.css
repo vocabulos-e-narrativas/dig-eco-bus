@@ -1,0 +1,287 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+body {
+    background-color: black;
+    font-family: 'Avenir', sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    background-color: black;
+    border-bottom: 8px solid transparent;
+    padding: 15px;
+    border-image: url(./assets/images/border.png) 30;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* MENU */
+
+.desktop-map {
+    display: block;
+}
+
+.mobile-image {
+    display: none;
+}
+
+.mobile-map {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .desktop-image {
+        display: none;
+    }
+
+    .desktop-map {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+    .mobile-map {
+        display: block;
+    }
+}
+
+/* LOADING */
+
+.loading {
+    background-image: url('./assets/images/loading_fundo.png');
+    position: relative;
+    height: 100vh;
+    /* Defina a altura desejada para a div de loading */
+}
+
+.loading h3,
+.loading img {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.loading h3 {
+    z-index: 1;
+    /* Opcional: ajuste a ordem de sobreposição se necessário */
+}
+
+/* APRESENTACAO */
+
+@media only screen and (max-width: 992px) {
+    .mobile-h2 {
+        font-size: 10px;
+        margin-top: 20px;
+        padding: 0 11px 0 0;
+    }
+
+    .mobile-p {
+        margin-top: 100px;
+        width: 270px;
+    }
+}
+
+.apresentacao-text {
+    margin-top: -30%;
+    margin-bottom: 15%;
+    width: min-content;
+    padding-right: 3%;
+}
+
+.roadmap {
+    position: relative;
+}
+
+.roadmap-container {
+    margin-bottom: 25em;
+}
+
+.roadmap-text {
+    margin-top: -47%;
+    width: 33%;
+    line-height: 100%;
+}
+
+.roadmap-text p {
+    font-size: 18px;
+}
+
+/* BOAS PRÁTICAS */
+
+.boas-praticas-text {
+    margin-top: -30%;
+    margin-bottom: 15%;
+    width: max-content;
+    padding-right: 3%;
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.p-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.lefttop {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+.righttop {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+.leftbottom {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+.rightbottom {
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+/* EQUIPA */
+
+.equipa-text {
+    margin-top: -30%;
+    margin-bottom: 15%;
+    width: max-content;
+    padding-right: 3%;
+}
+
+/* TESTEMUNHOS */
+
+.testemunhos-text {
+    margin-top: -30%;
+    margin-bottom: 15%;
+    width: max-content;
+    padding-right: 3%;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-player {
+    position: relative;
+    width: 28%;
+    height: auto;
+    z-index: 1;
+    margin-top: 14%;
+}
+
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* PUBLICACOES */
+
+.publicacoes-text {
+    margin-top: -30%;
+    margin-bottom: 15%;
+    width: max-content;
+    padding-right: 3%;
+}
+
+
+/* TENDENCIAS */
+
+.tendencias-text {
+    margin-top: -30%;
+    margin-bottom: 15%;
+    width: max-content;
+    padding-right: 3%;
+}
+
+/* BACK TO MENU BUTTON */
+
+.backMenuBottomWidth {
+    width: 12%;
+}
+
+@media only screen and (max-width: 767px) {
+    .backMenuBottomWidth {
+        width: 40%;
+    }
+}
+
+/* FOOTER */
+
+.logosFooterWidth {
+    width: 75%;
+}
+
+@media only screen and (max-width: 767px) {
+    .logosFooterWidth {
+        width: 30%;
+    }
+}
+
+/* OUTRO */
+
+.color79f7e3 {
+    color: #79f7e3 !important;
+}
+
+.color9de5b1 {
+    color: #9de5b1 !important;
+}
+
+.colorbed483 {
+    color: #bed483 !important;
+}
+
+.colord27a51 {
+    color: #d27a51 !important;
+}
+
+.white {
+    color: white !important;
+}
+
+.black {
+    color: black !important;
+}
+
+.mw-75 {
+    max-width: 75% !important;
+}
